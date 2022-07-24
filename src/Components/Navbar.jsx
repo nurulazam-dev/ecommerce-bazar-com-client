@@ -33,9 +33,6 @@ const Navbar = () => {
                                 <li><a className="dropdown-item" href="here">Something else here</a></li>
                             </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled">Disabled</a>
-                        </li>
                     </ul>
                     <div className="buttons">
                         <a href="chart" className="btn btn-outline-dark ms-2">
