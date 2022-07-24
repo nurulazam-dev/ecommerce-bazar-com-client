@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/Firebase.init';
-import SignInWithSocial from '../Login/SignInWithSocial/SignInWithSocial';
+import SignInWithSocial from './SocialLogin';
 
 const Register = () => {
     const [email, setEmail] = useState('');
