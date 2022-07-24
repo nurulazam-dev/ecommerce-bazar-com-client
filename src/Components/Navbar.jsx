@@ -22,17 +22,6 @@ const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="contact">Contact</a>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="down" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="action">Action</a></li>
-                                <li><a className="dropdown-item" href="ac">Another action</a></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="here">Something else here</a></li>
-                            </ul>
-                        </li>
                     </ul>
                     <div className="buttons">
                         <a href="chart" className="btn btn-outline-dark ms-2">
