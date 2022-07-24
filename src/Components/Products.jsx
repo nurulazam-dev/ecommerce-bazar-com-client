@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 
 const Products = () => {
 
@@ -32,4 +32,4 @@ return (
 );
 };
 
-export default Products;
+export default Products; */
