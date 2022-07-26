@@ -20,12 +20,11 @@ const SocialLogin = () => {
     console.log(googleUser);
     
     return (
-
         <div>
             <div className="text-center text-danger my-2">OR</div>
             <button
                 onClick={() => signInWithGoogle()}
-                className="btn btn-primary w-75 mb-2 d-flex mx-auto fs-5">
+                className="btn btn-primary w-75 d-flex mx-auto mb-2 fs-5">
                 <div><img className='w-10' src="https://i.ibb.co/JqhBJYJ/google.png" alt="" /></div>
                 Login with Google
             </button>

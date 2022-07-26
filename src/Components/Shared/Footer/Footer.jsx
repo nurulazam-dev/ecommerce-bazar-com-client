@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className="col-xs-12 col-sm-12 col-md-3 fs-5" >
                         <ul>
                             <li className="col-heading">RESOURCES</li>
-                            <li><a href="/home">Blog</a></li>
+                            <li><a href="/blogs">Blog</a></li>
                             <li><a href="/home">eBooks</a></li>
                             <li><a href="/home">Comparison Guide</a></li>
                             <li><a href="/home">Website Grader</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                         <ul>
                             <li className="col-heading">GET HELP</li>
                             <li><a href="/home">Help Center</a></li>
-                            <li><a href="/home">Contact Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                             <li><a href="/home">Terms & Conditions</a></li>
                             <li><a href="/home">Privacy</a></li>
                         </ul>
