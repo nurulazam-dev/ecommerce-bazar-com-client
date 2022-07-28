@@ -13,7 +13,7 @@ const Navbar = () => {
     }
     const navLinks = <>
         <li><NavLink to='/' className="nav-link fw-bold" aria-current="page">Home</NavLink></li>
-        <li><NavLink to='/produce' className='rounded-lg fw-bold nav-link'>Produce</NavLink></li>
+        <li><NavLink to='/product' className='rounded-lg fw-bold nav-link'>Produce</NavLink></li>
         <li><NavLink to='/about' className='rounded-lg fw-bold nav-link'>About</NavLink></li>
         <li><NavLink to='/contact' className='rounded-lg fw-bold nav-link'>Contact</NavLink></li>
         <li><NavLink to='/blogs' className='rounded-lg fw-bold nav-link'>Blogs</NavLink></li>

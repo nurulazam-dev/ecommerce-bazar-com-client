@@ -1,4 +1,4 @@
-const Data = [
+const DATA = [
     {
         id: 1,brand:"Apple ",phone_name:"iPhone 13 mini",slug:"apple_iphone_13_mini-11104",image:"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"},
     {id: 2,brand:"Apple ",phone_name:"iPhone 13 Pro",slug:"apple_iphone_13_pro-11102",image:"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"},
@@ -16,4 +16,4 @@ const Data = [
     {id: 14,brand:"Apple ",phone_name:"iPhone XR",slug:"apple_iphone_xr-9320",image:"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg"},
     {id: 15,brand:"Apple ",phone_name:"iPhone XS",slug:"apple_iphone_xs-9318",image:"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg"}
     ]
-    export default Data;
+    export default DATA;
