@@ -6,7 +6,7 @@ const Product = () => {
     const cardItem = (item) => {
         return (
             <div class="col">
-                <div class="card product-card my-4 p-4" key={item.id} style={{ width: '18rem' }}>
+                <div class="card product-card my-4 p-4" key={item.id} style={{ width: '19rem' }}>
                     <img src={item.image} class="card-img-top" alt={item.phone_name} />
                     <div class="card-body">
                         <h4 class="card-title text-center">{item.phone_name}</h4>
