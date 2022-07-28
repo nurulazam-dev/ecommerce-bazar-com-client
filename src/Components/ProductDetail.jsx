@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom'
-import DATA from '../Components/Home/Data'
+import DATA from '../Components/Home/Data';
+import {useDispatch} from 'react-redux';
+import {addItem, delItem} from '../redux/actions/index';
 
 const ProductDetail = () => {
     const [cartBtn, setCartBtn] = useState("Add to Cart")
@@ -11,11 +13,16 @@ const ProductDetail = () => {
     console.log(product);
     // console.log(DATA);
 
+    // we need to store useDispatch in a variable
+    const dispatch =useDispatch();
+
     const handleCart = (product) => {
         if (cartBtn === "Add to Cart") {
+            dispatch(addItem(product))
             setCartBtn("Remove from Cart")
         }
         else {
+            dispatch(delItem(product))
             setCartBtn("Add to Cart")
         }
     }
