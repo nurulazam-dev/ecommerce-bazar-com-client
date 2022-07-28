@@ -21,18 +21,16 @@ const SocialLogin = () => {
     
     return (
         <div>
-            <div className="text-center text-danger my-2">OR</div>
+            <div className="text-center text-success my-2">OR</div>
             <button
                 onClick={() => signInWithGoogle()}
-                className="btn btn-primary w-75 d-flex mx-auto mb-2 fs-5">
-                <div><img className='w-10' src="https://i.ibb.co/JqhBJYJ/google.png" alt="" /></div>
-                Login with Google
+                className="btn btn-outline-success w-75 mb-2 fs-5"> 
+               <span className='fa fa-google me-2'></span> Login with Google
             </button>
             <button
                 onClick={() => signInWithGithub()}
-                className="btn btn-success w-75 d-flex mx-auto fs-5">
-                <div><img className='w-10' src="https://i.ibb.co/3Wjh3wv/github.png" alt="" /></div>
-                Login with Github
+                className="btn btn-outline-primary w-75 mx-auto fs-5">
+                <span className='fa fa-github me-2'></span> Login with Github
             </button>
         </div>
     );

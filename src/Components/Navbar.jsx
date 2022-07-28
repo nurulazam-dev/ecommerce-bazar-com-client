@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink } from 'react-router-dom';
 import auth from '../Firebase/Firebase.init';
-import Login from './Buttons/Login';
+import CartBtn from './CartBtn';
 
 const Navbar = () => {
 
@@ -31,16 +31,17 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                     <div className="buttons">
-                        <Link className='text-decoration-none btn btn-outline-dark ms-2' to='/chart'>
+                        {/* <Link className='text-decoration-none btn btn-outline-dark ms-2' to='/cart'>
                             <i className="fa fa-shopping-cart me-1"></i>Cart (0)
-                            </Link>
-
-                        {
-                            user ?
-                                <button className='text-decoration-none btn btn-outline-dark ms-2' onClick={handleSignOut}>Sign out</button>
-                                : (<Login/>)
+                        </Link> */}
+                        <CartBtn/>
+                        {user ? <button className='text-decoration-none btn btn-outline-dark ms-2' onClick={handleSignOut}>Sign out</button>
+                            : (<Link as={Link} to="register" className='btn btn-outline-primary'>
+                                <i className="fa fa-user-plus me-1"></i> Register
+                            </Link>) || (<Link as={Link} to="login" className='btn btn-primary'>
+                                <i className="fa fa-sign-in me-1"></i> Login
+                            </Link>)
                         }
-                        
                     </div>
                 </div>
             </div>
