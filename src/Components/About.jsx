@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import AboutUs from '../Assets/About Us/About_Us.webp'
 
 const About = () => {
     return (
@@ -17,7 +18,7 @@ const About = () => {
                         <NavLink to='/contact' className="btn btn-outline-success my-4">Contact Us</NavLink>
                     </div>
                     <div className="col-md-3 d-flex mx-4">
-                        <img src="https://media.istockphoto.com/vectors/about-us-flat-design-style-colorful-illustration-vector-id1086341762?k=20&m=1086341762&s=612x612&w=0&h=0IC9wexJFHfX_pPBFCgnrVC0--aSDg3XKlJjNJmY9E0=" alt="About Us" height='450px' width='500px' />
+                        <img src={AboutUs} alt="About Us" height='450px' width='500px' />
                     </div>
                 </div>
             </div>
