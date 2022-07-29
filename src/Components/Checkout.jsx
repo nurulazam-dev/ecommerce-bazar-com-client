@@ -109,6 +109,8 @@ const Checkout = () => {
                                     <select className="form-select" id="country" required="">
                                         <option value="">Choose...</option>
                                         <option>United States</option>
+                                        <option>Bangladesh</option>
+                                        <option>India</option>
                                     </select>
                                     <div className="invalid-feedback">
                                         Please select a valid country.
@@ -120,6 +122,8 @@ const Checkout = () => {
                                     <select className="form-select" id="state" required="">
                                         <option value="">Choose...</option>
                                         <option>California</option>
+                                        <option>Dhaka</option>
+                                        <option>Chattogram</option>
                                     </select>
                                     <div className="invalid-feedback">
                                         Please provide a valid state.
