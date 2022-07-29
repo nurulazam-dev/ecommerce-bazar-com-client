@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="container-fluid">
-
+            <hr />
                 <div className="row  row-no-gutters">
                     <div className="col-xs-12 col-sm-12 col-md-3 fs-5" >
                         <ul>

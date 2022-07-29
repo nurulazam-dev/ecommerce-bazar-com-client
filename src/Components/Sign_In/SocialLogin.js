@@ -21,7 +21,7 @@ const SocialLogin = () => {
     
     return (
         <div className='w-75 mx-auto'>
-            <div className="text-center text-success my-2">OR</div>
+            <div className="text-center text-warning my-2">OR</div>
             <button
                 onClick={() => signInWithGoogle()}
                 className="btn btn-outline-success w-100 mx-auto mb-2 fs-5"> 
