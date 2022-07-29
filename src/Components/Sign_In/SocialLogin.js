@@ -20,16 +20,16 @@ const SocialLogin = () => {
     console.log(googleUser);
     
     return (
-        <div>
+        <div className='w-75 mx-auto'>
             <div className="text-center text-success my-2">OR</div>
             <button
                 onClick={() => signInWithGoogle()}
-                className="btn btn-outline-success w-75 mb-2 fs-5"> 
+                className="btn btn-outline-success w-100 mx-auto mb-2 fs-5"> 
                <span className='fa fa-google me-2'></span> Login with Google
             </button>
             <button
                 onClick={() => signInWithGithub()}
-                className="btn btn-outline-primary w-75 mx-auto fs-5">
+                className="btn btn-outline-primary w-100 mx-auto fs-5">
                 <span className='fa fa-github me-2'></span> Login with Github
             </button>
         </div>

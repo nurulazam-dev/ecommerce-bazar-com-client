@@ -35,12 +35,12 @@ const Navbar = () => {
                             <i className="fa fa-shopping-cart me-1"></i>Cart (0)
                         </Link> */}
                         <CartBtn/>
-                        {user ? <button className='text-decoration-none btn btn-outline-dark ms-2' onClick={handleSignOut}>Sign out</button>
-                            : (<Link as={Link} to="register" className='btn btn-outline-primary'>
-                                <i className="fa fa-user-plus me-1"></i> Register
-                            </Link>) || (<Link as={Link} to="login" className='btn btn-primary'>
+                        {user ? <button className='text-decoration-none btn btn-outline-primary ms-2' onClick={handleSignOut}>Sign out</button>
+                            : ((<Link as={Link} to="login" className='btn btn-outline-primary'>
                                 <i className="fa fa-sign-in me-1"></i> Login
-                            </Link>)
+                            </Link>) || (<Link as={Link} to="register" className='btn btn-outline-primary'>
+                                <i className="fa fa-user-plus me-1"></i> Register
+                            </Link>))
                         }
                     </div>
                 </div>
