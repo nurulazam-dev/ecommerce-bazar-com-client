@@ -20,4 +20,4 @@ switch (action.type) {
 }
 }
 
-export default addItem;
+export default addItems;

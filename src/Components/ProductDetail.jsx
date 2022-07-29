@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
 import DATA from '../Components/Home/Data';
 import {useDispatch} from 'react-redux';
 import {addItem, delItem} from '../redux/actions/index';
