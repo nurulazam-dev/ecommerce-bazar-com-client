@@ -34,13 +34,14 @@ const Navbar = () => {
                         {/* <Link className='text-decoration-none btn btn-outline-dark ms-2' to='/cart'>
                             <i className="fa fa-shopping-cart me-1"></i>Cart (0)
                         </Link> */}
-                        <CartBtn/>
-                        {user ? <button className='text-decoration-none btn btn-outline-primary ms-2' onClick={handleSignOut}>Sign out</button>
-                            : ((<Link as={Link} to="login" className='btn btn-outline-primary'>
+                        <CartBtn />
+                        <Link as={Link} to="register" className='btn btn-outline-primary mx-2'>
+                            <i className="fa fa-user-plus me-1"></i> Register
+                        </Link>
+                        {user ? <button className='text-decoration-none btn btn-outline-primary mx-2' onClick={handleSignOut}>Sign out</button>
+                            : (<Link as={Link} to="login" className='btn btn-outline-primary'>
                                 <i className="fa fa-sign-in me-1"></i> Login
-                            </Link>) || (<Link as={Link} to="register" className='btn btn-outline-primary'>
-                                <i className="fa fa-user-plus me-1"></i> Register
-                            </Link>))
+                            </Link>)
                         }
                     </div>
                 </div>

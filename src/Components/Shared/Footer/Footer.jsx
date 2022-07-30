@@ -55,7 +55,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="row row-no-gutters" id="bottom-footer" >
+                <div className="row bg-dark row-no-gutters" id="bottom-footer" >
                     <div className="col-xs-12 col-md-12 text-center" >
                         <p className='fs-5'>Copyright © {year} || All Rights Reserved by Ecommerce Bazar.Com</p>
                     </div>

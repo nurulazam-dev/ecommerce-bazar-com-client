@@ -24,7 +24,7 @@ const Product = () => {
 
     return (
         <div>
-            <div className="container py-2">
+            <div className="py-2">
                 <div className="row">
                     <div className="col-12 text-center">
                         <h1>Product</h1>
@@ -32,7 +32,7 @@ const Product = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="mx-2 px-2">
                 {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
                 <div className="row">
                     {DATA.map(cardItem)}

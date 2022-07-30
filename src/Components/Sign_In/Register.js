@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/Firebase.init';
 import SignInWithSocial from './SocialLogin';
-import login_img from "../../Assets/Social Logo/login_img.webp"
+import registerImg from "../../Assets/SocialLogo/registerImg.webp"
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -45,13 +45,10 @@ const Register = () => {
 
 
     return (
-        <div className='container bg-white mx-auto border p-3 rounded mt-5 shadow'>
+        <div className='container w-50 bg-white mx-auto border p-3 rounded mt-5 shadow'>
             <div className="row py-4">
-                <h2 className='text-primary text-center pb-4'>Please Register</h2>
-                <div className="col-md-5 mx-4">
-                    <img src={login_img} alt="About Us" height='460px' width='500px' />
-                </div>
-                <div className="col-md-6">
+                <h2 style={{color: '#fd7e14'}} className='text-center pb-4'>Please Register</h2>
+                <div className="col-md-7 px-0">
                     <form onSubmit={handleRegister} className='w-75 mx-auto'>
                         <div className="mb-3">
                             <input type="text" className="p-2 form-control fs-5" id="exampleInputName1" placeholder='Your Name' />
@@ -75,8 +72,11 @@ const Register = () => {
                                 })}
                         >Register</button>
                     </form>
-                    <p className='text-center mt-3 mb-0'>If you have already account ? <Link className='text-info text-decoration-none' to='/login'>Please Login</Link> </p>
+                    <p className='text-center mt-3 mb-0'>If you have already account ? <Link style={{color: '#fd7e14'}} className=' text-decoration-none' to='/login'>Please Login</Link> </p>
                     <SignInWithSocial></SignInWithSocial>
+                </div>
+                <div className="col-md-5">
+                    <img src={registerImg} alt="Register" height='490px' width='350px' />
                 </div>
             </div>
         </div>
