@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="container-fluid">
-            <hr />
+                <hr />
                 <div className="row  row-no-gutters">
                     <div className="col-xs-12 col-sm-12 col-md-3 fs-5" >
                         <ul>
@@ -55,11 +55,22 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="row bg-dark row-no-gutters" id="bottom-footer" >
+                {/* <div className="row bg-dark row-no-gutters" id="bottom-footer" >
                     <div className="col-xs-12 col-md-12 text-center" >
                         <p className='fs-5'>Copyright © {year} || All Rights Reserved by Ecommerce Bazar.Com</p>
                     </div>
+                </div> */}
+
+                <div class="d-flex flex-column bg-dark flex-sm-row justify-content-between py-2 px-4 my-2">
+                    <p className='fs-5 text-white'>Copyright © {year} || All Rights Reserved by Ecommerce Bazar.Com</p>
+                    <ul class="d-flex">
+                        <li class="ms-3"><a href="#twitter"><span style={{color: 'orange'}} className='fa fa-google btn btn-outline-info border-0'></span></a></li>
+                        <li class="ms-3"><a href="#instagram"><span style={{color: 'orange'}} className='fa fa-facebook btn btn-outline-info border-0'></span></a></li>
+                        <li class="ms-3"><a href="#facebook"><span style={{color: 'orange'}} className='fa fa-instagram btn btn-outline-info border-0'></span></a></li>
+                        <li class="ms-3"><a href="#facebook"><span style={{color: 'orange'}} className='fa fa-twitter btn btn-outline-info border-0'></span></a></li>
+                    </ul>
                 </div>
+
             </div>
         </footer>
     );
