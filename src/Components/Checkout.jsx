@@ -43,26 +43,17 @@ const Checkout = () => {
                         </form>
                     </div>
                     <div className="col-md-7 col-lg-8">
-                        <h4 className="mb-3">Billing address</h4>
+                        <h3 className="mb-3">Billing Address</h3>
                         <form className="needs-validation" novalidate="">
                             <div className="row g-3">
                                 <div className="col-sm-6">
-                                    <label for="firstName" className="form-label">First name</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="" value="" required="" />
+                                    <label for="firstName" className="form-label">Full Name</label>
+                                    <input type="text" className="form-control" id="firstName" placeholder="Your Full Name" value="" required="" />
                                     <div className="invalid-feedback">
-                                        Valid first name is required.
+                                        Valid full name is required.
                                     </div>
                                 </div>
-
                                 <div className="col-sm-6">
-                                    <label for="lastName" className="form-label">Last name</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="" value="" required="" />
-                                    <div className="invalid-feedback">
-                                        Valid last name is required.
-                                    </div>
-                                </div>
-
-                                <div className="col-12">
                                     <label for="username" className="form-label">Username</label>
                                     <div className="input-group has-validation">
                                         <span className="input-group-text">@</span>
@@ -74,8 +65,8 @@ const Checkout = () => {
                                 </div>
 
                                 <div className="col-12">
-                                    <label for="email" className="form-label">Email <span className="text-muted">(Optional)</span></label>
-                                    <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                                    <label for="email" className="form-label">Email <span className="text-muted"></span></label>
+                                    <input type="email" className="form-control" id="email" placeholder="Email Address" required="" />
                                     <div className="invalid-feedback">
                                         Please enter a valid email address for shipping updates.
                                     </div>
@@ -83,17 +74,11 @@ const Checkout = () => {
 
                                 <div className="col-12">
                                     <label for="address" className="form-label">Address</label>
-                                    <input type="text" className="form-control" id="address" placeholder="1234 Main St" required="" />
+                                    <input type="text" className="form-control" id="address" placeholder="Your Full Address" required="" />
                                     <div className="invalid-feedback">
                                         Please enter your shipping address.
                                     </div>
                                 </div>
-
-                                <div className="col-12">
-                                    <label for="address2" className="form-label">Address 2 <span className="text-muted">(Optional)</span></label>
-                                    <input type="text" className="form-control" id="address2" placeholder="Apartment or suite" />
-                                </div>
-
                                 <div className="col-md-5">
                                     <label for="country" className="form-label">Country</label>
                                     <select className="form-select" id="country" required="">
@@ -129,22 +114,7 @@ const Checkout = () => {
                                 </div>
                             </div>
 
-                            <hr className="my-4" />
-
-                            <div className="form-check">
-                                <input type="checkbox" className="form-check-input" id="same-address" />
-                                <label className="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                            </div>
-
-                            <div className="form-check">
-                                <input type="checkbox" className="form-check-input" id="save-info" />
-                                <label className="form-check-label" for="save-info">Save this information for next time</label>
-                            </div>
-
-                            <hr className="my-4" />
-
-                            <h4 className="mb-3">Payment</h4>
-
+                            <h4 className="mt-4">Payment With-</h4>
                             <div className="my-3">
                                 <div className="form-check">
                                     <input id="credit" name="paymentMethod" type="radio" className="form-check-input" checked="" required="" />
@@ -195,9 +165,7 @@ const Checkout = () => {
                                 </div>
                             </div>
 
-                            <hr className="my-4" />
-
-                            <button className="w-50 mx-auto btn btn-outline-success btn-lg" type="submit">Continue to checkout</button>
+                            <button className="w-50 mx-auto my-4 btn btn-outline-success btn-lg" type="submit">Continue to checkout</button>
                         </form>
                     </div>
                 </div>
