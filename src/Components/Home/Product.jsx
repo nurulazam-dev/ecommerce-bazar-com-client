@@ -12,11 +12,10 @@ const Product = () => {
                         <h4 class="card-title text-center">{item.phone_name}</h4>
                         <h5 className='text-center  text-primary'>{item.brand} </h5>
                         <h5 className='text-center'>Price: $ </h5>
-                        <p className='mb-0'>{item.slug} </p>
                     </div>
-                    <div class="card-footer">
-                        <NavLink to={`/products/${item.id}`} className='btn btn-outline-primary rounded-lg fw-bold nav-link'>Buy Now</NavLink>
-                    </div>
+                        <NavLink to={`/products/${item.id}`} className='btn btn-outline-primary rounded-lg fw-bold nav-link'>Details</NavLink>
+                    {/* <div class="card-footer">
+                    </div> */}
                 </div>
             </div>
         )
