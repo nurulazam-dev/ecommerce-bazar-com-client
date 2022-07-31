@@ -5,6 +5,7 @@ import Blogs from './Components/Blogs';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
 import Contact from './Components/Contact';
+import Dashboard from './Components/Dashboard';
 import Home from './Components/Home/Home';
 import Product from './Components/Home/Product';
 import Navbar from './Components/Navbar';
@@ -23,6 +24,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/cart' element={<Cart />}></Route>

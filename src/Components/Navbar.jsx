@@ -17,6 +17,7 @@ const Navbar = () => {
         <li><NavLink to='/about' className='rounded-lg fw-bold nav-link'>About</NavLink></li>
         <li><NavLink to='/contact' className='rounded-lg fw-bold nav-link'>Contact</NavLink></li>
         <li><NavLink to='/blogs' className='rounded-lg fw-bold nav-link'>Blogs</NavLink></li>
+        <li><NavLink to='/dashboard' className='rounded-lg fw-bold nav-link'>Dashboard</NavLink></li>
     </>
 
     return (
