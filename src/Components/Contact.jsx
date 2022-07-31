@@ -16,25 +16,25 @@ const Contact = () => {
                         <img src={ContactUs} alt="Contact Us" height='420px' width='500px' />
                     </div>
                     <div className="col-md-7 fs-5">
-                        <form class="row g-3">
-                            <div class="col-md-12">
-                                <label for="inputName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="inputName" placeholder='Your Full Name' />
+                        <form className="row g-3">
+                            <div className="col-md-12">
+                                <label for="inputName" className="form-label">Full Name</label>
+                                <input type="text" className="form-control" id="inputName" placeholder='Your Full Name' />
                             </div>
-                            <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder='Email Address' />
+                            <div className="col-md-6">
+                                <label for="inputEmail4" className="form-label">Email</label>
+                                <input type="email" className="form-control" id="inputEmail4" placeholder='Email Address' />
                             </div>
-                            <div class="col-md-6">
-                                <label for="inputContact4" class="form-label">Contact Number</label>
-                                <input type="number" class="form-control" id="inputContact" placeholder='Contact Number' />
+                            <div className="col-md-6">
+                                <label for="inputContact4" className="form-label">Contact Number</label>
+                                <input type="number" className="form-control" id="inputContact" placeholder='Contact Number' />
                             </div>
-                            <div class="col-12">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="4"  placeholder='Your Message/Comment'></textarea>
+                            <div className="col-12">
+                            <label for="message" className="form-label">Your Message</label>
+                            <textarea className="form-control" id="message" rows="4"  placeholder='Your Message/Comment'></textarea>
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-outline-success">Send Message</button>
+                            <div className="col-12">
+                                <button type="submit" className="btn btn-outline-success">Send Message</button>
                             </div>
                         </form>
                         

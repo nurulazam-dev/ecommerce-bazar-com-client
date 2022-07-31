@@ -6,16 +6,16 @@ switch (action.type) {
         ...state,
         action.payload
     ]
-        break;
+        // break;
 
     case "DELITEM":
         return state=state.filter((x)=>{
-            return x.id !== action.payload.id
+            return x._id !== action.payload._id
         })
-        break;
+        // break;
 
         default: return state;
-        break;
+        // break;
     
 }
 }
