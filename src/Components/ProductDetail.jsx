@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import {useDispatch} from 'react-redux';
 import {addItem, delItem} from '../redux/actions/index';
 import useProducts from '../hooks/useProducts';
@@ -42,6 +42,7 @@ const ProductDetail = () => {
                         <h2 className='my-3'>{product?.phone_name}</h2>
                         <h4 className='my-3'><span className='fw-bold'>Brand: </span>{product?.brand}</h4>
                         <h4 className='my-3'><span className='fw-bold'>Price: </span>${product?.price}</h4>
+                        <p className='lead my-1'><span className='fw-bold'>Product ID: </span>{product?._id}</p>
                         <p className='lead my-1'><span className='fw-bold'>Chip Set: </span>{product?.chipSet}</p>
                         <p className='lead my-1'><span className='fw-bold'>Release Date: </span>{product?.releaseDate}</p>
                         <p className='lead my-1'><span className='fw-bold'>Slug: </span>{product?.slug}</p>

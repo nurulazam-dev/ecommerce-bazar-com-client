@@ -36,7 +36,13 @@ const Product = () => {
             <div className="mx-2 px-2">
                 {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
                 <div className="row">
-                    {products.map(cardItem)}
+                    {products.slice(0,20).map(cardItem)}
+                </div>
+            </div>
+            <div className="mx-2 px-2">
+                {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
+                <div className="row">
+                    {products.slice(21,40).map(cardItem)}
                 </div>
             </div>
         </div>

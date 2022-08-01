@@ -9,7 +9,6 @@ a:hover{
 color: #ff6600;
 font-weight: 500;
 }
-
 .col-heading {
 display: block;
 font-size: 2rem;
@@ -23,10 +22,15 @@ letter-spacing: 3px;
 }
 
 .fa {
-color: #304f50;
+color: #ffffff;
 margin-right: 10px;
 font-size:18px;
 width:2.25rem;
+transition: all 0.2s ease;
+}
+.fa:hover{
+    color: #ff6600;
+    transform: scale(1.5);
 }
 #to-top {
 display: none;

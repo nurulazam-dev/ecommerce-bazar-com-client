@@ -64,10 +64,10 @@ const Footer = () => {
                 <div class="d-flex flex-column bg-dark flex-sm-row justify-content-between py-2 px-4 my-2">
                     <p className='fs-5 text-white'>Copyright © {year} || All Rights Reserved by Ecommerce Bazar.Com</p>
                     <ul class="d-flex">
-                        <li class="ms-3"><a href="#twitter"><span style={{color: 'orange'}} className='fa fa-google btn btn-outline-info border-0'></span></a></li>
-                        <li class="ms-3"><a href="#instagram"><span style={{color: 'orange'}} className='fa fa-facebook btn btn-outline-info border-0'></span></a></li>
-                        <li class="ms-3"><a href="#facebook"><span style={{color: 'orange'}} className='fa fa-instagram btn btn-outline-info border-0'></span></a></li>
-                        <li class="ms-3"><a href="#facebook"><span style={{color: 'orange'}} className='fa fa-twitter btn btn-outline-info border-0'></span></a></li>
+                        <li class="ms-3"><a href="#google"><span className='fa fa-google'></span></a></li>
+                        <li class="ms-3"><a href="#facebook"><span className='fa fa-facebook'></span></a></li>
+                        <li class="ms-3"><a href="#instagram"><span className='fa fa-instagram'></span></a></li>
+                        <li class="ms-3"><a href="#twitter"><span className='fa fa-twitter'></span></a></li>
                     </ul>
                 </div>
 
