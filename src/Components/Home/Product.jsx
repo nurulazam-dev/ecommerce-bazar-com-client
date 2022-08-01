@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
+import AdBanner1 from './AdBanner1';
 
 const Product = () => {
     const [products] = useProducts();
@@ -39,6 +40,7 @@ const Product = () => {
                     {products.slice(0,20).map(cardItem)}
                 </div>
             </div>
+            <AdBanner1 />
             <div className="mx-2 px-2">
                 {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
                 <div className="row">
