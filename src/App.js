@@ -5,7 +5,7 @@ import Blogs from './Components/Blogs';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
 import Contact from './Components/Contact';
-import Dashboard from './Components/Dashboard';
+import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 import Product from './Components/Home/Product';
 import Navbar from './Components/Navbar';
