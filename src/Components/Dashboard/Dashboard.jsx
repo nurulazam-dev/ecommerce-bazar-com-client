@@ -1,86 +1,44 @@
 import React from 'react';
+// import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, Outlet } from 'react-router-dom';
+// import auth from '../../Firebase/Firebase.init';
 
 const Dashboard = () => {
+    // const [user] = useAuthState(auth)
     return (
         <>
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                        <div className="chartjs-size-monitor">
-                            <div className="chartjs-size-monitor-expand">
-                                <div className=""></div>
-                            </div>
-                            <div className="chartjs-size-monitor-shrink">
-                                <div className=""></div>
-                            </div>
-                        </div>
-                        <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                            <h1 className="h2">Dashboard</h1>
-                        </div>
-                        <h2>Section title</h2>
-
-                    </div>
-
-                    <nav id="sidebarMenu" className="col-md-2 col-lg-2 d-md-block bg-light sidebar " >
-                        <div className="position-sticky pt-3 sidebar-sticky" >
-                            <div class="d-flex flex-column flex-shrink-0 p-0 bg-light">
-                                <h3 class="text-center">DASHBOARD</h3>
+                <div className="drawer drawer-end drawer-mobile">
+                    <div className="row">
+                        <div className="col-10">
+                            <div className="drawer-content">
+                                <h2 className='text-2xl font-bold text-center my-2 py-2'>DASHBOARD</h2>
                                 <hr />
-                                <ul class="nav nav-pills flex-column mb-auto">
-                                    <li class="nav-item">
-                                        <a href="#1" class="nav-link active" aria-current="page">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#home"></use></svg>
-                                            Dashboard Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#speedometer2"></use></svg>
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#speedometer2"></use></svg>
-                                            My Order
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#speedometer2"></use></svg>
-                                            Manage Orders
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#table"></use></svg>
-                                            Manage Products
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#grid"></use></svg>
-                                            Add Product
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#people-circle"></use></svg>
-                                            Add Review
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#people-circle"></use></svg>
-                                            Customers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#1" class="nav-link link-dark">
-                                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink="#people-circle"></use></svg>
-                                            Analysis
-                                        </a>
-                                    </li>
+                                <Outlet />
+                            </div>
+                        </div>
+                        <div className="col-2">
+                            <div className="drawer-side bg-light p-3">
+                                <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
+                                <h4 className='text-center'>E B Com</h4>
+                                <hr />
+                                <ul className="menu p-lg-4 overflow-y-auto text-base-content">
+                                    {/* {user && <> */}
+                                    <li><Link to='/dashboard' class="nav-link">My Profile</Link></li>
+                                    <li><Link to='/dashboard/myOrders' class="nav-link">My Orders</Link></li>
+                                    <li><Link to='/dashboard/addReview' class="nav-link">Add Review</Link></li>
+                                    {/* </>} */}
+
+                                    {/* {admin && <> */}
+                                    <li><Link to='/dashboard/manageProducts' class="nav-link">Manage Products</Link></li>
+                                    <li><Link to='/dashboard/manageOrders' class="nav-link">Manage Orders</Link></li>
+                                    <li><Link to='/dashboard/addProduct' class="nav-link">Add Product</Link></li>
+                                    <li><Link to='/dashboard/addBlog' class="nav-link">Add Blog</Link></li>
+                                    <li><Link to='/dashboard/customers' class="nav-link">Customers</Link></li>
+                                    <li><Link to='/dashboard/makeAdminPanel' class="nav-link">Make Admin</Link></li>
+                                    <li><Link to='/dashboard/analysis' class="nav-link">Analysis</Link></li>
+                                    {/* </>} */}
+
                                 </ul>
                                 <hr />
                                 <div class="">
@@ -88,10 +46,9 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-                    </nav>
-
+                    </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

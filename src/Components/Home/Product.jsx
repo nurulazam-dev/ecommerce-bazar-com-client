@@ -44,7 +44,14 @@ const Product = () => {
             <div className="mx-2 px-2">
                 {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
                 <div className="row">
-                    {products.slice(30).map(cardItem)}
+                    {products.slice(30,60).map(cardItem)}
+                </div>
+            </div>
+            <AdBanner1 />
+            <div className="mx-2 px-2">
+                {/* <div className="row row-cols-2 row-cols-md-4 g-4"> */}
+                <div className="row">
+                    {products.slice(60).map(cardItem)}
                 </div>
             </div>
         </div>

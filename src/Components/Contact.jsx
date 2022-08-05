@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ContactUs from '../Assets/Contact Us/ContactUs.jpg'
 
 const Contact = () => {
@@ -34,7 +35,7 @@ const Contact = () => {
                             <textarea className="form-control" id="message" rows="4"  placeholder='Your Message/Comment'></textarea>
                             </div>
                             <div className="col-12">
-                                <button type="submit" className="btn btn-outline-success">Send Message</button>
+                                <Link to='/contact' className="btn btn-outline-success">Send Message</Link>
                             </div>
                         </form>
                         
